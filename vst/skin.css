@@ -1,0 +1,16 @@
+/* Ondes skin: larger baked text than the renderer's defaults (titles 20, labels 15, segments 14, buttons 15 px),
+ * so it reads at arm's length on an MPC screen. Sizes and positions of controls come from layout.conf. */
+:root {
+  --title-size: 26px;
+  --label-size: 22px;
+  --seg-size: 24px;
+  --button-size: 32px;
+  --radius: 10px;
+  --sheen: 0.06;
+}
+.frame-title { letter-spacing: 0.06em; }
+.seg-tx { font-weight: 700; letter-spacing: 0.02em; }
+/* one size for every button label (the renderer shrinks each label to fit its box with an inline size) */
+.button-tx { font-size: var(--button-size) !important; font-weight: 700; letter-spacing: 0.04em; }
+/* a lit button (theme_btn_on fill) gets dark text: light text on amber is hard to read */
+.button[style*="f2b24c"] .button-tx { fill: #1a140f; }
