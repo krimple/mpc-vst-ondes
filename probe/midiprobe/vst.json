@@ -1,0 +1,28 @@
+{
+ "name": "MIDI Probe",
+ "vendor": "krimple",
+ "uid": "MdPb",
+ "version": 100,
+ "so": "midiprobe.so",
+ "params": "params.json",
+ "cc": false,
+ "nrpn": false,
+ "defines": {
+  "HAS_DISPLAY_REV": 1,
+  "PARAM_TEXT_MAX": 64
+ },
+ "build": {
+  "root": "../..",
+  "sources": [
+   "probe/midiprobe/engine.c"
+  ],
+  "cflags": [
+   "-O2"
+  ],
+  "libs": [
+   "-lpthread",
+   "-lm"
+  ]
+ },
+ "layout": "layout.conf"
+}

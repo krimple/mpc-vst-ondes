@@ -1,0 +1,62 @@
+[
+ {
+  "key": "m1",
+  "name": "Msg 1",
+  "display": "string",
+  "live": true
+ },
+ {
+  "key": "m2",
+  "name": "Msg 2",
+  "display": "string",
+  "live": true
+ },
+ {
+  "key": "m3",
+  "name": "Msg 3",
+  "display": "string",
+  "live": true
+ },
+ {
+  "key": "m4",
+  "name": "Msg 4",
+  "display": "string",
+  "live": true
+ },
+ {
+  "key": "m5",
+  "name": "Msg 5",
+  "display": "string",
+  "live": true
+ },
+ {
+  "key": "m6",
+  "name": "Msg 6",
+  "display": "string",
+  "live": true
+ },
+ {
+  "key": "bend",
+  "name": "Bend",
+  "display": "string",
+  "live": true
+ },
+ {
+  "key": "counts",
+  "name": "Counts",
+  "display": "string",
+  "live": true
+ },
+ {
+  "key": "ccs",
+  "name": "CCs Seen",
+  "display": "string",
+  "live": true
+ },
+ {
+  "key": "clear",
+  "name": "Clear",
+  "momentary": true,
+  "automatable": false
+ }
+]
