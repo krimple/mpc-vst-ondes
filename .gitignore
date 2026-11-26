@@ -1,0 +1,6 @@
+research/
+vst/build/
+probe/*/build/
+bench/
+dist/
+.DS_Store
