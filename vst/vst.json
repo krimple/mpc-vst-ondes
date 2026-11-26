@@ -1,0 +1,28 @@
+{
+ "name": "Ondes",
+ "vendor": "krimple",
+ "uid": "OndM",
+ "version": 500,
+ "so": "ondes.so",
+ "params": "params.json",
+ "build": {
+  "root": "..",
+  "sources": [
+   "src/ondes.c",
+   "src/osc.c"
+  ],
+  "cflags": [
+   "-O2",
+   "-Isrc"
+  ],
+  "libs": [
+   "-lm",
+   "-lpthread"
+  ]
+ },
+ "layout": "layout.conf",
+ "art": "html",
+ "programs": {
+  "param": "preset"
+ }
+}

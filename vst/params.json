@@ -1,0 +1,462 @@
+{
+ "name": "Ondes",
+ "params": [
+  {
+   "key": "t_o",
+   "name": "Sine",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "On"
+  },
+  {
+   "key": "t_8",
+   "name": "Octave",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "Off"
+  },
+  {
+   "key": "t_c",
+   "name": "Hollow",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "Off"
+  },
+  {
+   "key": "t_g",
+   "name": "Square",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "Off"
+  },
+  {
+   "key": "t_gp",
+   "name": "Soft Square",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "Off"
+  },
+  {
+   "key": "t_n",
+   "name": "Nasal",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "Off"
+  },
+  {
+   "key": "t_s",
+   "name": "Breath",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "Off"
+  },
+  {
+   "key": "t_t",
+   "name": "All",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "Off"
+  },
+  {
+   "key": "oct_level",
+   "name": "Octave Level",
+   "min": 1,
+   "max": 5,
+   "default": 3,
+   "display": "int"
+  },
+  {
+   "key": "g_level",
+   "name": "Soft Tone",
+   "min": 1,
+   "max": 5,
+   "default": 3,
+   "display": "int"
+  },
+  {
+   "key": "souffle_bal",
+   "name": "Breath Mix",
+   "min": 0,
+   "max": 100,
+   "default": 0,
+   "unit": "%"
+  },
+  {
+   "key": "felt",
+   "name": "Muffle",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "Off"
+  },
+  {
+   "key": "grave",
+   "name": "Bass",
+   "min": -12,
+   "max": 12,
+   "default": 0,
+   "unit": "dB"
+  },
+  {
+   "key": "aigu",
+   "name": "Treble",
+   "min": -12,
+   "max": 12,
+   "default": 0,
+   "unit": "dB"
+  },
+  {
+   "key": "volume",
+   "name": "Volume",
+   "min": -60,
+   "max": 6,
+   "default": -6,
+   "unit": "dB"
+  },
+  {
+   "key": "octave",
+   "name": "Octave Shift",
+   "options": [
+    "-1",
+    "0",
+    "+1"
+   ],
+   "default": "0"
+  },
+  {
+   "key": "tune",
+   "name": "Fine Tune",
+   "min": -100,
+   "max": 100,
+   "default": 0,
+   "unit": "ct"
+  },
+  {
+   "key": "key_source",
+   "name": "Intensity Source",
+   "options": [
+    "Velocity",
+    "Aftertouch",
+    "Mod Wheel",
+    "Pedal",
+    "Breath"
+   ],
+   "default": "Velocity"
+  },
+  {
+   "key": "key_mode",
+   "name": "Articulation",
+   "options": [
+    "Note + Intensity",
+    "Intensity Only"
+   ],
+   "default": "Note + Intensity"
+  },
+  {
+   "key": "key_curve",
+   "name": "Curve",
+   "min": 0.5,
+   "max": 4,
+   "default": 2.2
+  },
+  {
+   "key": "key_dead",
+   "name": "Dead Zone",
+   "min": 0,
+   "max": 20,
+   "default": 3,
+   "unit": "%"
+  },
+  {
+   "key": "key_smooth_ms",
+   "name": "Smoothing",
+   "min": 0,
+   "max": 30,
+   "default": 2,
+   "unit": "ms"
+  },
+  {
+   "key": "env_att_ms",
+   "name": "Attack",
+   "min": 1,
+   "max": 500,
+   "default": 8,
+   "unit": "ms"
+  },
+  {
+   "key": "env_rel_ms",
+   "name": "Release",
+   "min": 5,
+   "max": 2000,
+   "default": 120,
+   "unit": "ms"
+  },
+  {
+   "key": "drive",
+   "name": "Drive",
+   "min": 0,
+   "max": 100,
+   "default": 15,
+   "unit": "%"
+  },
+  {
+   "key": "mode",
+   "name": "Play Mode",
+   "options": [
+    "Keyboard",
+    "Ribbon"
+   ],
+   "default": "Keyboard"
+  },
+  {
+   "key": "ring_span",
+   "name": "Ribbon Range",
+   "options": [
+    "1 Oct",
+    "2 Oct",
+    "3 Oct",
+    "4 Oct"
+   ],
+   "default": "2 Oct"
+  },
+  {
+   "key": "ring_slew_ms",
+   "name": "Smoothing",
+   "min": 0,
+   "max": 50,
+   "default": 8,
+   "unit": "ms"
+  },
+  {
+   "key": "ring_latch",
+   "name": "Ribbon Hold",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "On"
+  },
+  {
+   "key": "glide_ms",
+   "name": "Glide",
+   "min": 0,
+   "max": 1000,
+   "default": 0,
+   "unit": "ms"
+  },
+  {
+   "key": "bend_range",
+   "name": "Bend Range",
+   "min": 0,
+   "max": 12,
+   "default": 1,
+   "unit": "st",
+   "display": "int"
+  },
+  {
+   "key": "vib_src",
+   "name": "Vibrato Source",
+   "options": [
+    "Mod Wheel",
+    "Aftertouch",
+    "Off"
+   ],
+   "default": "Mod Wheel"
+  },
+  {
+   "key": "vib_rate",
+   "name": "Rate",
+   "min": 3,
+   "max": 9,
+   "default": 5.5,
+   "unit": "Hz"
+  },
+  {
+   "key": "vib_depth",
+   "name": "Depth",
+   "min": 0,
+   "max": 100,
+   "default": 30,
+   "unit": "ct"
+  },
+  {
+   "key": "vib_human",
+   "name": "Drift",
+   "min": 0,
+   "max": 100,
+   "default": 40,
+   "unit": "%"
+  },
+  {
+   "key": "tr_m14",
+   "name": "-1/4 Tone",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "Off"
+  },
+  {
+   "key": "tr_p14",
+   "name": "+1/4 Tone",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "Off"
+  },
+  {
+   "key": "tr_p12",
+   "name": "+1/2 Tone",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "Off"
+  },
+  {
+   "key": "tr_p1",
+   "name": "+1 Tone",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "Off"
+  },
+  {
+   "key": "tr_p3",
+   "name": "+3rd",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "Off"
+  },
+  {
+   "key": "tr_p5",
+   "name": "+5th",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "Off"
+  },
+  {
+   "key": "strip_notes",
+   "name": "Strip Notes Up",
+   "options": [
+    "Off",
+    "+1 Oct",
+    "+2 Oct",
+    "+3 Oct"
+   ],
+   "default": "Off"
+  },
+  {
+   "key": "voice_mode",
+   "name": "Voices",
+   "options": [
+    "Mono",
+    "Legato",
+    "Poly"
+   ],
+   "default": "Legato"
+  },
+  {
+   "key": "preset",
+   "name": "Preset",
+   "min": 0,
+   "max": 39,
+   "default": 0,
+   "display": "int",
+   "automatable": false
+  }
+ ],
+ "sections": [
+  {
+   "label": "Tiroir",
+   "keys": [
+    "t_o",
+    "t_8",
+    "t_c",
+    "t_g",
+    "t_gp",
+    "t_n",
+    "t_s",
+    "t_t",
+    "oct_level",
+    "g_level",
+    "souffle_bal",
+    "felt"
+   ]
+  },
+  {
+   "label": "Transpositeurs",
+   "keys": [
+    "tr_m14",
+    "tr_p14",
+    "tr_p12",
+    "tr_p1",
+    "tr_p3",
+    "tr_p5",
+    "octave",
+    "tune"
+   ]
+  },
+  {
+   "label": "Jeu",
+   "keys": [
+    "mode",
+    "ring_span",
+    "ring_slew_ms",
+    "ring_latch",
+    "glide_ms",
+    "bend_range",
+    "vib_src",
+    "vib_rate",
+    "vib_depth",
+    "vib_human",
+    "strip_notes",
+    "voice_mode"
+   ]
+  },
+  {
+   "label": "Touche",
+   "keys": [
+    "key_source",
+    "key_mode",
+    "key_curve",
+    "key_dead",
+    "key_smooth_ms",
+    "env_att_ms",
+    "env_rel_ms"
+   ]
+  },
+  {
+   "label": "Tone",
+   "keys": [
+    "grave",
+    "aigu",
+    "volume",
+    "drive"
+   ]
+  }
+ ]
+}
